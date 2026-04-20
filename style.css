@@ -1,0 +1,24 @@
+header{
+    margin: 0px;
+    display: flex;
+}
+
+main{
+    font-family: 'TT Lakes';
+    overflow: scroll;
+}
+
+@media(max-width: 430px){
+    .grid-box{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(min-width: 431px) and (max-width: 1120px){
+    .grid-box{
+        grid-template-columns: 
+        repeat(2, 1fr);
+        width: 100%;
+    }
+}
+
