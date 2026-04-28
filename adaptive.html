@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width= , initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="fonts.css">
     <link rel="stylesheet" href="style.css">
     <title>Услуги и сервисы</title>
@@ -13,44 +13,43 @@
 
     <header class="header">
         <div class="header__container">
-            <img src="burger.svg" alt="">
-            <img src="Group.svg" alt="" class="CPS-logo">
-            <img src="checkstatus.svg" alt="">
-            <img src="repair.svg" alt="">
+            <img src="burger.svg" alt="" class="header__container-buttons">
+            <img src="Group.svg" alt="" class="header__container-logo">
+            <img src="divider.svg" alt="" class="header__container-divider">
+            <img src="checkstatus.svg" alt="" class="header__container-buttons">
+            <img src="repair.svg" alt="" class="header__container-buttons">
         </div>
     </header>
 
 
-    <main class="content">
+    <main>
 
         <div class="services">
             <h1>Услуги и сервисы</h1>
 
-            <nav class="services__tabs">
-                <ul>
-                    <li class="active">Ремонтируемые бренды</li>
-                    <li>Ремонтируемые устройства</li>
-                    <li>Цены на услуги</li>
-                    <li>Адреса сервисных центров</li>
-                    <li>Специальные цены</li>
-                    <li>Отзывы</li>
-                </ul>
-            </nav>
-
-            <div class="services__body">
-                <article class="services__description">
-                    <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете
-                        отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-                    <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера...</p>
-                    <p>Читать дальше</p>
-                </article>
+            <div class="services__tabs">
+                <div class="services__tabs-tab-active">Ремонтируемые бренды</div>
+                <div class="services__tabs-tab">Ремонтируемые устройства</div>
+                <div class="services__tabs-tab">Цены на услуги</div>
+                <div class="services__tabs-tab">Адреса сервисных центров</div>
+                <div class="services__tabs-tab">Специальные цены</div>
+                <div class="services__tabs-tab">Отзывы</div>
             </div>
 
-            <div class="services__image">
+            <div class="services-container">
+                <div class="services__body">
+                    <article class="services__body-description">
+                        <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете
+                            отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+                        <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера...</p>
+                        <p>Читать дальше</p>
+                    </article>
+                </div>
 
-                <img src="cps-pic.png" alt="Логотип CPS на стене">
+                    <img src="cps-pic.png" alt="Логотип CPS на стене" class="services__image">
 
             </div>
+
         </div>
 
     </main>
