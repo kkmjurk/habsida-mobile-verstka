@@ -58,10 +58,7 @@ img {
     padding: 10px 20px;
 }
 
-
-@media(max-width: 430px) {}
-
-@media(min-width: 431px) {
+@media(min-width: 431px) and (max-width: 1100px) {
     .services-container {
         display: flex;
         flex-direction: row;
@@ -74,5 +71,24 @@ img {
 
     .services__image {
         width: 50%;
+    }
+}
+
+@media (min-width 1101px) and (max-width: 2000px) {
+    .services-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    .services__body {
+        width: 50%;
+    }
+
+    .services__image {
+        flex: 0 0 530px;
+        width: 50%;
+        object-fit: cover;
     }
 }
