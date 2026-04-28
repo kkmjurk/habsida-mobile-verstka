@@ -1,11 +1,13 @@
 body{
-
+font-family: TTlakes;
 }
 
 header{
     margin: 0px;
     display: flex;
+    size: 40px;
 }
+header-img
 
 main{
     overflow: scroll;
@@ -16,9 +18,9 @@ img{
     height: auto;
 }
 
-
-.article__prices-block{
-    display: inline;
+.services{
+    display: inline-block;
+    background-color: #F8F8F8;
 }
 
 @media(max-width: 430px){
