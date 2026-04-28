@@ -1,13 +1,21 @@
 body{
-font-family: TTlakes;
+    font-family: TTlakes;
 }
 
 header{
     margin: 0px;
     display: flex;
-    size: 40px;
 }
-header-img
+
+header img {
+    width: 50px;
+    height: auto;
+}
+
+.CPS-logo{
+    width: 100px;
+    height: auto;
+}
 
 main{
     overflow: scroll;
