@@ -14,8 +14,13 @@
     <header class="header">
         <div class="header__container">
             <img src="burger.svg" alt="" class="header__container-buttons">
+            <img src="divider.svg" alt="" class="header__container-divider-hidden">
             <img src="Group.svg" alt="" class="header__container-logo">
             <img src="divider.svg" alt="" class="header__container-divider">
+            <img src="call.svg" alt="" class="header__container-buttons-hidden">
+            <img src="chat.svg" alt="" class="header__container-buttons-hidden">
+            <img src="profile.svg" alt="" class="header__container-buttons-hidden">
+            <img src="divider.svg" alt="" class="header__container-divider-hidden">
             <img src="checkstatus.svg" alt="" class="header__container-buttons">
             <img src="repair.svg" alt="" class="header__container-buttons">
         </div>
@@ -25,15 +30,14 @@
     <main>
 
         <div class="services">
-            <h1>Услуги и сервисы</h1>
+            <h1 class="services-title">Услуги и сервисы</h1>
 
             <div class="services__tabs">
-                <div class="services__tabs-tab-active">Ремонтируемые бренды</div>
+                <div class="services__tabs-tab-active">Ремонтируемые устройства</div>
                 <div class="services__tabs-tab">Ремонтируемые устройства</div>
                 <div class="services__tabs-tab">Цены на услуги</div>
                 <div class="services__tabs-tab">Адреса сервисных центров</div>
                 <div class="services__tabs-tab">Специальные цены</div>
-                <div class="services__tabs-tab">Отзывы</div>
             </div>
 
             <div class="services-container">
@@ -41,10 +45,13 @@
                     <article class="services__body-description">
                         <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете
                             отремонтировать свой ноутбук Dell с официальной гарантией производителя.
-                            <span>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера</span>
-                            <span>что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам
+                            <span class="services__body-description-hidden-1">Мы успешно работаем с 1992 года и
+                                заслужили репутацию надежного партнера</span>
+                            <span class="services__body-description-hidden-2">что подтверждает большое количество
+                                постоянных клиентов. Мы гордимся тем, что к нам
                                 обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span>
-                        <p>Читать дальше</p>
+                        <button class="services__body-description-read-more"> <span><img src="expand.svg" alt=""
+                                    class="services__body-description-read-more-img"></span>Читать дальше</button>
                     </article>
                 </div>
 

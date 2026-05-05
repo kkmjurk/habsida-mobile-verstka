@@ -1,6 +1,8 @@
 body {
-    font-family: TTlakes;
+    font-family: 'TTlakes', 'TTlakesCompressed', 'TTlakesCondensed';
+    padding: 0px;
 }
+
 
 .header__container {
     display: flex;
@@ -19,12 +21,23 @@ body {
     width: 50px;
 }
 
+.header__container-buttons-hidden {
+    width: 50px;
+    display: none;
+}
+
 .header__container-divider {
     width: 2px;
 }
 
+.header__container-divider-hidden {
+    width: 2px;
+    display: none;
+}
+
 main {
     overflow: scroll;
+
 }
 
 img {
@@ -35,10 +48,18 @@ img {
 .services {
     display: block;
     background-color: #F8F8F8;
+    padding-top: 20px;
+}
+
+.services-title {
+    padding-left: 20px;
+    border-left: 5px solid #41F6D7;
+    line-height: 1.2;
 }
 
 .services__tabs {
     display: flex;
+    padding-left: 20px;
     overflow-x: auto;
     white-space: nowrap;
     gap: 10px;
@@ -56,9 +77,57 @@ img {
     border: 2px solid #B8FFEC;
     background-color: white;
     padding: 10px 20px;
+    color: #7E7E82;
+}
+
+.services__body-description {
+    padding-left: 20px;
+}
+
+.services__body-description-hidden-1 {
+    display: none;
+}
+
+.services__body-description-hidden-2 {
+    display: none;
+}
+
+.services__body-description-read-more {
+    background: none;
+    border: none;
+    padding: 0;
+    font-weight: 400;
+}
+
+.services__body-description-read-more-img {
+    width: 30px;
 }
 
 @media(min-width: 431px) and (max-width: 1100px) {
+    header {
+        margin: 30px;
+    }
+    
+    .header__container {
+        gap: 20px;
+    }
+
+    .header__container-logo {
+        margin-right: auto;
+    }
+
+    .header__container-buttons-hidden {
+        display: block;
+    }
+
+    .header__container-divider {
+        display: none;
+    }
+
+    .header__container-divider-hidden {
+        display: block;
+    }
+
     .services-container {
         display: flex;
         flex-direction: row;
@@ -69,12 +138,16 @@ img {
         width: 50%;
     }
 
+    .services__body-description-hidden-1 {
+        display: block;
+    }
+
     .services__image {
         width: 50%;
     }
 }
 
-@media (min-width 1101px) and (max-width: 2000px) {
+@media (min-width: 1101px) and (max-width: 2000px) {
     .services-container {
         display: flex;
         flex-direction: row;
@@ -84,6 +157,14 @@ img {
 
     .services__body {
         width: 50%;
+    }
+
+    .services__body-description-hidden-1 {
+        display: block;
+    }
+
+    .services__body-description-hidden-2 {
+        display: block;
     }
 
     .services__image {
